@@ -7,6 +7,9 @@ gem 'rails', '3.2.8'
 group :development, :test do
 	gem 'sqlite3'
 	gem 'rspec-rails'
+	gem 'guard-rspec'
+	gem 'guard-spork'
+  	gem 'spork'
 end
 
 # Gems used only for assets and not required
@@ -39,6 +42,8 @@ gem 'jquery-rails'
 # gem 'debugger'
 group :test do
 	gem 'capybara'
+	gem 'rb-inotify'
+  	gem 'libnotify'
 end
 group :production do
   gem 'pg', '0.12.2'
